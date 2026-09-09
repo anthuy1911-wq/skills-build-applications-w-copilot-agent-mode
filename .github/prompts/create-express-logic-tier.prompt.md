@@ -19,3 +19,7 @@ Requirements:
    - `/api/workouts/`
 5. Keep server port on `8000`.
 6. Add Codespaces-aware API URL support using `CODESPACE_NAME`.
+7. Configure the API for both Codespaces and localhost by building the base URL as:
+   - `https://$CODESPACE_NAME-8000.app.github.dev` when `CODESPACE_NAME` is available
+   - `http://localhost:8000` when `CODESPACE_NAME` is not set
+8. Verify the API endpoints `/api/users` and `/api/activities` with `curl` after the server is running.

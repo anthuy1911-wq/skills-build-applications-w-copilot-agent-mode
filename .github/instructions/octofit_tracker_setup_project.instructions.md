@@ -18,11 +18,11 @@ Build an Octofit Tracker **multi-tier application** with:
 - Never change directories in commands.
 - Always reference target paths directly.
 
-## Forwarded ports
+## Ports
 
-- 8000: public (logic/API tier)
-- 5173: public (presentation tier)
-- 27017: private (data tier)
+- Forward port 8000 for the public logic/API tier.
+- Forward port 5173 for the public presentation tier.
+- Keep port 27017 private (data tier) and do not forward it.
 
 Do not propose any other ports to forward or make public.
 
